@@ -1,0 +1,41 @@
+*1-0U												by	http://www.xsquawkbox.net/xpsdk/docs/DataRefs.html
+[A]
+[I]
+Cx sim/cockpit2/pressurization/actuators/cabin_altitude_ft 0 (a)
+[O]
+yD (b) sim/cockpit2/fuel/fuel_tank_selector (c)
+
+
+
+Inputs:
+
+(x) correlative number from 1 to...
+
+(a)	1..n	in case of array, the position of the array starterd with 1, else always 1 -Unit number (if any) #-
+
+	examples
+
+		C2 sim/cockpit2/hydraulics/indicators/hydraulic_fluid_ratio_1 0 5
+		C3 sim/cockpit2/hydraulics/indicators/hydraulic_fluid_ratio_1 0 1
+
+
+Outputs:
+
+(y) correlative number from 1 to...
+(b)	0		integer
+	-3 -2 -1	data sent every 1000  100  or  10 units 					(for float)			for value of 338.143097... -3 = 338.14  -2 = 338.14  -1 = 
+	1 2 3 4		output every 0.1  0.01  0.001  or  0.0001 unit's fraction	(for float)			for value of 0.85000000    1 = 0.85      2 = 0.85     3=    4=
+
+	examples	1D 0 sim/cockpit2/electrical/battery_on 1							int[8]
+			5D -1 sim/cockpit2/pressurization/indicators/cabin_altitude_ft 1		float
+			8D 2 sim/cockpit2/hydraulics/indicators/hydraulic_fluid_ratio_1 1		float
+
+(c)	1..n	in case of array, the position of the array starterd with 1, else always 1 -Unit number (if any) #-
+	examples	10D 0 sim/cockpit2/electrical/battery_voltage_actual_volts 3
+			1D 0 sim/cockpit2/electrical/battery_on 1
+			1D 4 sim/cockpit2/pressurization/actuators/cabin_altitude_ft 7
+
+
+
+
+

@@ -1,0 +1,26 @@
+#######################################
+# Syntax ArdSim_Interface
+#######################################
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+ArdSimX	KEYWORD1
+ArdSimScan	KEYWORD2
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+BoardNumber	KEYWORD1
+SimInput 	KEYWORD2
+ProgOut	KEYWORD2		
+######################################
+# Instances (KEYWORD2)
+#######################################
+# Constants (LITERAL1)
+#######################################
+MAC_ADDR	LITERAL1
+ARDUINO_IP	LITERAL1
+XPLANE_IP	LITERAL1
+
+
+
+

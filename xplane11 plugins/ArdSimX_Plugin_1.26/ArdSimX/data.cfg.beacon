@@ -1,0 +1,18 @@
+@ ================= INFO =================
+
+Board #1 - Arduino (USB) -------------------------------------------------------
+
+---- Digital pins: ----
+
+8 - Pitot tube heat is On
+13 - Beacon Light is On
+
+
+
+@ ================= CONFIG =================
+
+*1-0U
+[A]
+[O]
+13L 0 sim/cockpit2/switches/beacon_on 1
+8L 0 sim/cockpit2/ice/ice_pitot_heat_on_pilot 1

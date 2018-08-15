@@ -1,0 +1,79 @@
+#include <ArdCom.h>
+#include <ArdSimIn.h>
+#include <ArdSimX_Interface.h>
+
+float Com1 = 0;
+float Com1stb = 0;
+float Com2 = 0;
+float Com2stb = 0;
+
+float Nav1 = 0;
+float Nav1stb = 0;
+float Nav2 = 0;
+float Nav2stb = 0;
+
+float Adf1 = 0;
+float Adf1stb = 0;
+float Adf2 = 0;
+float Adf2stb = 0;
+
+int Xpdr = 0;
+int mode_xpd = 0;
+
+void setup()  {
+
+  BoardNumber 1; // -- Numero de Placa  (0...9)
+  Serial.begin(9600);
+}
+
+void loop()   {
+  ArdSimScan;
+  Serial.print('COM 1 Active: ');
+  Serial.println(Com1);
+  Serial.print('COM 1 SandBy: ');
+  Serial.println(Com1stb);
+  Serial.print('NAV 1 Active: ');
+  Serial.println(Nav1);
+  Serial.print('NAV 1 SandBy: ');
+  Serial.println(Nav1stb);
+  Serial.print('ADF 1 Active: ');
+  Serial.println(Adf1);
+  Serial.print('ADF 1 SandBy: ');
+  Serial.println(Adf1stb);
+  Serial.print('XPDR: ');
+  Serial.println(Xpdr);
+  Serial.print('XPDR Mode: ');
+  Serial.println(mode_xpd);
+  Serial.print('COM 2 Active: ');
+  Serial.println(Com2);
+  Serial.print('COM 2 SandBy: ');
+  Serial.println(Com2stb);
+  Serial.print('NAV 2 Active: ');
+  Serial.println(Nav2);
+  Serial.print('NAV 2 SandBy: ');
+  Serial.println(Nav2stb);
+  Serial.print('ADF 2 Active: ');
+  Serial.println(Adf2);
+  Serial.print('ADF 2 SandBy: ');
+  Serial.println(Adf2stb);
+
+  delay(1000);
+}
+void ProgOut(byte id, float val) {
+  switch (id) {
+    case 1: Com1 = val/1000; break; 
+    case 2: Com1stb = val/1000; break; 
+    case 3: Nav1 = val/100; break; 
+    case 4: Nav1stb = val/100; break;
+    case 5: Adf1 = val; break;
+    case 6: Adf1stb  = val; break;
+    case 7: Xpdr = val; break;
+    case 8: mode_xpd = val; break;
+    case 9: Com2 = val/1000; break;
+    case 10: Com2stb = val/1000; break;
+    case 11: Nav2 = val/100; break;
+    case 12: Nav2stb = val/100; break;
+    case 13: Adf2 = val; break;
+    case 14: Adf2stb  = val; break;
+  }
+}

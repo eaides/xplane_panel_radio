@@ -1,0 +1,106 @@
+@ ================= INFO =================
+
+Board #1 - Arduino (USB) + i2c -------------------------------------------------------
+
+---- Digital pins: ----
+
+2 - Transponder ones +/-
+4 - Transponder tens +/-
+6 - Transponder hundreds +/-
+8 - Transponder thousands +/-
+13 - Beacon Light is On
+22 - COM 1 standby kHz, 3 digits
+24 - COM 1 standby Mhz
+26 - NAV 1 standby kHz
+28 - NAV 1 standby Mhz
+30 - ADF 1 standby hundreds and thousands
+32 - ADF 1 standby ones and tens
+34 - COM 2 standby kHz, 3 digits
+36 - COM 2 standby Mhz
+38 - NAV 2 standby kHz
+40 - NAV 2 standby Mhz
+42 - ADF 2 standby hundreds and thousands
+44 - ADF 2 standby ones and tens
+48 - COM 1 flip standby.
+49 - COM 2 flip standby.
+50 - NAV 1 flip standby.
+51 - NAV 2 flip standby.
+52 - ADF 1 Flip active/standby button
+53 - ADF 2 Flip active/standby
+
+---- Programmable outputs: ----
+
+1 - Com 1 active – 6 digits
+2 - Com 1 standby – 6 digits
+3 - Nav 1 frequency
+4 - Nav 1 standby frequency
+5 - ADF 1 Active frequency, hz
+6 - ADF 1 Standby frequency, hz
+7 - Current Transponder code (0000-7777)
+8 - Transponder mode
+9 - ADF 2 Active frequency, hz
+10 - ADF 2 Standby frequency, hz
+11 - Nav 2 frequency
+12 - Nav 2 standby frequency
+13 - Com 2 active – 6 digits
+14 - Com 2 standby – 6 digits
+
+@ ================= CONFIG =================
+
+*1-0Ui
+[A]
+[I]
+13L 0 sim/cockpit2/switches/beacon_on 1
+E22- sim/radios/stby_com1_fine_down_833
+E22+ sim/radios/stby_com1_fine_up_833
+E24- sim/radios/stby_com1_coarse_down
+E24+ sim/radios/stby_com1_coarse_up
+E26- sim/radios/stby_nav1_fine_down
+E26+ sim/radios/stby_nav1_fine_up
+E28- sim/radios/stby_nav1_coarse_down
+E28+ sim/radios/stby_nav1_coarse_up
+E30- sim/radios/stby_adf1_hundreds_thous_down
+E30+ sim/radios/stby_adf1_hundreds_thous_up
+E34- sim/radios/stby_com2_fine_down_833
+E34+ sim/radios/stby_com2_fine_up_833
+E36- sim/radios/stby_com2_coarse_down
+E36+ sim/radios/stby_com2_coarse_up
+E40- sim/radios/stby_nav2_coarse_down
+E40+ sim/radios/stby_nav2_coarse_up
+E38- sim/radios/stby_nav2_fine_down
+E38+ sim/radios/stby_nav2_fine_up
+E32- sim/radios/stby_adf1_ones_tens_down
+E32+ sim/radios/stby_adf1_ones_tens_up
+E42- sim/radios/stby_adf2_hundreds_thous_down
+E42+ sim/radios/stby_adf2_hundreds_thous_up
+E44- sim/radios/stby_adf2_ones_tens_down
+E44+ sim/radios/stby_adf2_ones_tens_up
+D48+ sim/radios/com1_standy_flip
+D49+ sim/radios/com2_standy_flip
+D50+ sim/radios/nav1_standy_flip
+D51+ sim/radios/nav2_standy_flip
+D52+ sim/radios/adf1_standy_flip
+D53+ sim/radios/adf2_standy_flip
+E2- sim/transponder/transponder_ones_down
+E2+ sim/transponder/transponder_ones_up
+E4- sim/transponder/transponder_tens_down
+E4+ sim/transponder/transponder_tens_up
+E6- sim/transponder/transponder_hundreds_down
+E6+ sim/transponder/transponder_hundreds_up
+E8- sim/transponder/transponder_thousands_down
+E8+ sim/transponder/transponder_thousands_up
+[O]
+1D 0 sim/cockpit2/radios/actuators/com1_frequency_hz_833 1
+2D 0 sim/cockpit2/radios/actuators/com1_standby_frequency_hz_833 1
+3D 0 sim/cockpit2/radios/actuators/nav1_frequency_hz 1
+4D 0 sim/cockpit2/radios/actuators/nav1_standby_frequency_hz 1
+5D 0 sim/cockpit2/radios/actuators/adf1_frequency_hz 1
+6D 0 sim/cockpit2/radios/actuators/adf1_standby_frequency_hz 1
+7D 0 sim/cockpit2/radios/actuators/transponder_code 1
+8D 0 sim/cockpit2/radios/actuators/transponder_mode 1
+9D 0 sim/cockpit2/radios/actuators/adf2_frequency_hz 1
+10D 0 sim/cockpit2/radios/actuators/adf2_standby_frequency_hz 1
+11D 0 sim/cockpit2/radios/actuators/nav2_frequency_hz 1
+12D 0 sim/cockpit2/radios/actuators/nav2_standby_frequency_hz 1
+13D 0 sim/cockpit2/radios/actuators/com2_frequency_hz_833 1
+14D 0 sim/cockpit2/radios/actuators/com2_standby_frequency_hz_833 1

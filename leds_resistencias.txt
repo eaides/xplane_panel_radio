@@ -1,0 +1,33 @@
+led rojo		220 ohm		(150)
+led azul		100 ohm		(100)
+led verde		330 ohm		(150)
+led blanco		??		(100)
+led rgb catodo comun	220-330 ohm para cada color, el comun (catodo - negativo) a tierra
+led rgb anodo comun	220-330 ohm para cada color, el comun (anodo  - positivo) a voltaje 
+botones/switches	10K ohm
+
+
+http://led.linear1.org/1led.wiz
+color			diode forward voltage	diode forward current (mA) 	resistence calculated	comercial	color		
+IR			1.5			20				175 ohm			180 ohm 1/8W 	marron gris marron dorado 
+
+red			2.0			20				150 ohm			150 ohm 1/8W 	marron verde marron dorado  
+orange			2.0			20				150 ohm			150 ohm 1/8W 	marron verde marron dorado  
+yelow			2.1			20				145 ohm			150 ohm 1/8W 	marron verde marron dorado  
+green			2.2			20				140 ohm			150 ohm 1/8W 	marron verde marron dorado 
+
+true green		3.3			20				 85 ohm			100 ohm 1/8W 	marron negro marron dorado 
+blue			3.3			20				 85 ohm			100 ohm 1/8W 	marron negro marron dorado 
+white			3.3			20				 85 ohm			100 ohm 1/8W 	marron negro marron dorado 
+UV			3.3			20				 85 ohm			100 ohm 1/8W 	marron negro marron dorado
+
+blue (430nm)		4.6			20				 20 ohm			 22 ohm 1/8W 	rojo naranja negro dorado
+
+Matrices: http://led.linear1.org/led.wiz
+http://ledcalculator.net/
+
+Calculadora de resistencias para leds
+https://www.inventable.eu/paginas/LedResCalculatorSp/LedResCalculatorSp.html
+
+Calculador de código de colores de resistencias de 4 bandas
+https://www.digikey.com/es/resources/conversion-calculators/conversion-calculator-resistor-color-code-4-band

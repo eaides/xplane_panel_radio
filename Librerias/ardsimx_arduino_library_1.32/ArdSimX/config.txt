@@ -1,0 +1,47 @@
+
+ArdSimX ver. 1.30+ 
+
+//======= Encoder configuration correction
+
+In the data .cfg you can add these "correction" number for different encoder types:
+
+Encoder detents/pulses type: http://www.simvim.com/tech_encoder.html 
+
+To set encoder type, manually add the "E" option in the [A] section of your data.cfg file. The letter "E" is followed by encoder ID and the corresponding "detents type" number (1,2 or 3), separated by comma:
+
+[A]
+
+E E30,1 E46,2 E8,2
+
+[I]
+
+If no any type is set, deafult is type #1 
+
+
+// -- Acceleration/precision
+
+You can add encoder acceleration factor number up to 3 (1,2 or 3) after the encoder type number, separated by comma. Acceleration sensitivity can be set from strict single-step mode to maximum acceleration:
+
+1     - "Single-step" mode always set, no acceleration
+2     - Slow acceleration
+3     - Moderate acceleration
+0 (or none)     - Default acceleration 
+
+//=== Examples: 
+
+[A]
+
+E E30,1 E46,2,1 E8,2,3
+
+===============================
+
+// -- Using 2  buttons instead of encoder:
+
+[A]
+
+E E6,B
+
+- Encoder #6 is used as two +/- buttons.
+
+
+---------------------
