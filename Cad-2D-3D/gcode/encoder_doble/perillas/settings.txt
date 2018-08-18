@@ -1,0 +1,64 @@
+layer 				0.14			(Cube: 0.14)
+initial 			0.12			(Cube: 0.14)
+line width			0.4
+
+wall thicknes		0.8			
+	count			2
+top/bottom thicknes	0.6
+	top thicknes	0.6
+	layers			5			(Cube: 6 normally calculated, but fixed value)
+	bottom thicknes	0.6
+	layers			5			(Cube: 5)
+patterns			lines		(default: concentric)
+	initial			lines		(default: concentric)
+horizontal expans.	0
+	initial			0
+ironing				No
+	only on highest	(No)
+	pattern			(zig zag)
+	speed			(20)
+
+infill density		20
+	pattern			Grid		(default: Triangles)
+	
+Temprature			200
+	initial layer	200
+	initial			190			(Cube/Default: 190)
+	final			185			(Cube: 185)
+Bed					60
+	initial			60
+Flow				100
+	initial			100			(Cube: 105)
+retraction			Yes	
+	distance		6			(default: 5)
+	speed			30			(default: 40)
+	
+Print Speed			40 			(Cube and default: 60)
+	infill Sp		40			(default: 40)
+	wall Sp			20			(Cube: 30)
+	top/bottom		20			(Cube: 30)
+Initial speed		20			(Cube: 15)
+	initial			20			(Cube: 15)
+	initial travel	120			(Cube: 120 / Default: 60))		 		A higher travel speed decreases the chance of filament oozing from the nozzle, 
+								resulting in a cleaner object. However, higher speed could also cause the nozzle to hit a previously printed part, 
+								which may damage the print due to the heated nozzle. This can be prevented by using Z-hop when retracting.
+	
+X hop retracted		yes			(Cube/default: No)
+	z height		1
+	
+Cooling enable		yes
+	fan speed		100
+	regular			100
+	max				100
+	initial fan		0
+	regular at		0.2 mm		(Cube: 0.14)
+	at layer		2
+	
+Supports			No
+Built Plate 		Skirt	
+
+
+calculated time:	0 hour 46 minutes
+
+
+all 4 pairs: 3 hours 18 minutes

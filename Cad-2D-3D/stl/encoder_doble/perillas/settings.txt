@@ -1,14 +1,14 @@
 layer 				0.14			(Cube: 0.14)
-initial 			0.14			(Cube: 0.14)
+initial 			0.12			(Cube: 0.14)
 line width			0.4
 
-wall thicknes		1			
+wall thicknes		0.8			
 	count			2
 top/bottom thicknes	0.6
 	top thicknes	0.6
-	layers			3			(Cube: 6 normally calculated, but fixed value)
+	layers			5			(Cube: 6 normally calculated, but fixed value)
 	bottom thicknes	0.6
-	layers			3			(Cube: 5)
+	layers			5			(Cube: 5)
 patterns			lines		(default: concentric)
 	initial			lines		(default: concentric)
 horizontal expans.	0
@@ -59,3 +59,6 @@ Built Plate 		Skirt
 
 
 calculated time:	0 hour 46 minutes
+
+
+all 4 pairs: 3 hours 18 minutes
