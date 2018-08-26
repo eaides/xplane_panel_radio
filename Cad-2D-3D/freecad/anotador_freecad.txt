@@ -1,0 +1,26 @@
+frente izquierda  ancho: 130.00   - alto: 157.85          - profundidad: 4.00 mm
+frente derecha    ancho: 159.00   - alto: 157.85          - profundidad: 4.00 mm
+                         289.00 <<==
+(clavija izquierda a 30.00 del borde izquierdo -centro-)
+(clavija derecha   a 38.00 del borde derecho   -centro-)
+
+base izquierda    frente: 144.00  - profundidad: 212.00   - altura: 4.00 mm
+base derecha      frente: 145.00  - profundidad: 212.00   - altura: 4.00 mm
+                          289.00
+
+lateral izquierda ancho: 2.00 mm  - alto: 157.85         - profundidad: 210 mm
+lateral derecha   ancho: 2.00 mm  - alto: MAL
+
+
+
+
+
+
+150x30x300     a 484 -65 -700		me deja ancho
+
+
+
+484
+150
+
+634
