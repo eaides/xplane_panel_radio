@@ -16,7 +16,7 @@ base_para_arduino_y_matrizia_derecha      	frente: 144.00  - profundidad: 212.00
 lateral_derecho					ancho: 2.00 mm  	alto: 153.85         	profundidad: 210 mm
 lateral_izquierdo				ancho: 2.00 mm 		alto: 153.85         	profundidad: 210 mm
 
-pared trasera					largo: 284			alto: 
+pared trasera					largo: 284			alto: 151.85
 
 ancho 220 x 220 => hipotenusa: 311.12 
 48400 + 48400 = 96800
