@@ -1,6 +1,6 @@
 panel_frente_izquierdo				ancho: 130.00		alto: 157.85		profundidad: 4.00 mm			
 panel_frente_derecho    			ancho: 158.00		alto: 157.85		profundidad: 4.00 mm
-						       288.00 <<==
+						                   288.00 <<==
 (clavija izquierda a 30.00 del borde izquierdo -centro-)
 (clavija derecha   a 38.00 del borde derecho   -centro-)
 
@@ -8,7 +8,7 @@ flejes_frente					ancho: 2.20/1.60mm	alto: 157.85		profundidad: 0.50 mm
 
 base_para_arduino_y_matrizia_izquierda		frente: 144.00  - profundidad: 212.00   - altura: 4.00 mm
 base_para_arduino_y_matrizia_derecha      	frente: 144.00  - profundidad: 212.00   - altura: 4.00 mm
-                          289.00
+                                                    288.00
 
 (clavija izquierda a 30.00 del borde izquierdo -centro-)
 (clavija derecha   a 38.00 del borde derecho   -centro-)
@@ -16,8 +16,9 @@ base_para_arduino_y_matrizia_derecha      	frente: 144.00  - profundidad: 212.00
 lateral_derecho					ancho: 2.00 mm  	alto: 153.85         	profundidad: 210 mm
 lateral_izquierdo				ancho: 2.00 mm 		alto: 153.85         	profundidad: 210 mm
 
+pared trasera					largo: 284			alto: 151.85
 
-
-
+ancho 220 x 220 => hipotenusa: 311.12 
+48400 + 48400 = 96800
 
 
