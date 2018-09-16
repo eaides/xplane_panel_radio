@@ -1,0 +1,7 @@
+bases nuevas v2
+
+largo   288 mm
+ancho   146 mm
+
+antes   212 mm
+cortar  66mm
